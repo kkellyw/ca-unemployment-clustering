@@ -1,6 +1,6 @@
 ## **California Unemployment: Urban vs. Rural County Clustering**
 
-Context:
+### Context:
 
 The dataset contains employment and unemployment statistics on California
 from the years 1990–2024. I'm passionate about economics since I think it
@@ -32,51 +32,51 @@ In this dataset, I wanted to look at which counties consistently
 experience high unemployment, and whether there's a gap between rural and
 urban counties in unemployment rates.
 
-Key Terms:
+### Key Terms:
 
-Labor force: the total number of citizens who are either employed
+**Labor force**: the total number of citizens who are either employed
 or unemployed but actively looking for work
-Employment: the proportion of citizens aged 16+ who are employed
-Unemployment: citizens 16+ who did not work when the data was
+**Employment**: the proportion of citizens aged 16+ who are employed
+**Unemployment**: citizens 16+ who did not work when the data was
 compiled but made noticeable efforts to find a job within the past four
 weeks and were able to work
-Unemployment rate: the number unemployed as a percent of the labor
+**Unemployment Rate**: the number unemployed as a percent of the labor
 force
 
 
-Exploratory Analysis:
+### Exploratory Analysis:
 
-Measures of Center: the mean labor force is about 123,095, but the
+**Measures of Center:** the mean labor force is about 123,095, but the
 median is much lower at about 7,175 which means the dataset contains areas
 with very large labor forces (larger urban populations) that pull the
 mean up, while most areas are much smaller. Mean unemployment rate is
 around 8.38% vs. a median of 6.7%, telling us some areas regularly
 experience above-average unemployment.
 
-Measures of Spread: labor force ranges from 0 to 19,644,100 — a wide
+**Measures of Spread:** labor force ranges from 0 to 19,644,100 — a wide
 range reflecting extremely small rural populations versus large city
 areas. Unemployment rate ranges from 0% to 100%; the 0% likely reflects
 very small counties/populations with few people employed by small or
 family-owned businesses, while 100% likely reflects small rural areas
 with no job opportunities.
 
-By area: grouping by county, the highest unemployment rates showed up
+**By area:** grouping by county, the highest unemployment rates showed up
 in places like Clio, Prattville, and Keeler which are all very low-population
 areas, which makes sense. The highest employment numbers showed up in
 places like Los Angeles County, Orange County, and Alameda County — well
 populated, well-off areas.
 
-By year: employment increased steadily over the years overall, but
+**By year:** employment increased steadily over the years overall, but
 some years had noticeably higher unemployment, tied to economic or
 societal events. Unemployment was highest during years like 2020 (COVID)
 or recession years, and lowest during years of economic stability.
 
-The Question:
+### The Question:
 
-Is there a clear difference and gap between urban and rural counties in
-California concerning unemployment rates?
+**Is there a clear difference and gap between urban and rural counties in
+California concerning unemployment rates?**
 
-Method: K-means clustering
+### Method: K-means clustering
 
 To answer this, I used K-means clustering to see if counties would
 naturally group into two clusters based on unemployment rate; the idea
@@ -88,11 +88,11 @@ actual list of California urban vs. rural counties I compiled from
 external research and California databases, to see how accurate the
 clustering really was.
 
-Results
+### Results:
 
-The clusters grouped themselves into pretty explainable groups: Cluster
-0 had lower unemployment rates, all under 10%, which I attributed to
-urban counties. Cluster 1 had much higher unemployment rates, ranging
+The clusters grouped themselves into pretty explainable groups: **Cluster
+0** had lower unemployment rates, all under 10%, which I attributed to
+urban counties. **Cluster 1** had much higher unemployment rates, ranging
 from the high teens to 22%, which I attributed to rural counties. The
 visualization (bar plot, Cluster 0 in purple and Cluster 1 in gold)
 confirmed this. Lower unemployment rates clustered together, and higher
@@ -103,14 +103,14 @@ urban side but don't get as many resources or as much help as larger
 counties, resulting in higher unemployment rates despite being urban
 unlike flourishing counties such as Alameda or Los Angeles County.
 
-Conclusion
+### Conclusion:
 
 My use of K-means clustering showed there is a slight gap between urban
 and rural counties' unemployment rates, but resources and the help
 certain counties get play an even bigger role than just the labels
 "urban" and "rural."
 
-Ideas for Continuing this Project:
+### Ideas for Continuing this Project:
 
 Look further into persistently high-unemployment regions; is it driven
 by labor force size and rural location, or a lack of resources/support?
