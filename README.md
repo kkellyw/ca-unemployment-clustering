@@ -1,6 +1,6 @@
 ## **California Unemployment: Urban vs. Rural County Clustering**
 
-### Context:
+### **Context**:
 
 The dataset contains employment and unemployment statistics on California
 from the years 1990–2024. I'm passionate about economics since I think it
